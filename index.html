@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tombol Hamburger (muncul di HP) -->
+  <div id="hamburger">&#9776;</div>
+
+  <!-- Sidebar kiri -->
+  <div id="sidebar">
+    <h3>Daftar Soal</h3>
+    <table id="question-table"></table>
+  </div>
+
+  <!-- Switch Mode -->
+  <div id="mode-switch">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- Container Quiz -->
+  <div class="quiz-container">
+    <!-- Halaman Quiz -->
+    <div id="quiz" class="quiz-content">
+      <div id="question-container"></div>
+      <div id="answers"></div>
+      <div id="loading" class="hide">Loading...</div>
+
+      <!-- Navigasi -->
+      <div class="nav-buttons">
+        <button id="prev-btn" class="hide">Previous</button>
+        <button id="next-btn" class="hide">Next</button>
+        <button id="finish-btn">Selesai</button>
+      </div>
+    </div>
+
+    <!-- Halaman Review -->
+    <div id="review" class="review-content hide">
+      <h1>Your Results</h1>
+      <div id="score"></div>
+      <div id="review-container"></div>
+      <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+  </div>    
+
+  <!-- Footer -->
+  <footer>
+    <small>© 2025 Quiz Web-App. All Rights Reserved. Design by 
+      <a href="https://instagram.com/novian.prat">@muhammadnovian</a>
+    </small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
